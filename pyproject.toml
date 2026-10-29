@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "livecode"
+version = "0.1.0"
+description = "Continuous git sync so several people can work on the same branch at once"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+livecode = "livecode:main"
+
+[tool.setuptools]
+py-modules = ["livecode"]
